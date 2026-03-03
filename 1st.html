@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Portfolio | v2.0</title>
+    <link rel="stylesheet" href="1st.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-wrapper">
+        <nav class="glass-nav">
+            <div class="logo">LUXE<span>GALLERY</span></div>
+            <div class="filter-controls" id="filter-container">
+                </div>
+        </nav>
+
+        <main class="gallery-viewport">
+            <div class="grid-container" id="gallery-grid">
+                </div>
+        </main>
+    </div>
+
+    <div id="lightbox-portal" class="lightbox-overlay">
+        <div class="lightbox-controls">
+            <button class="ctrl-btn close-btn" onclick="UI.closeLightbox()">&times;</button>
+        </div>
+        
+        <div class="lightbox-content">
+            <button class="nav-arrow left" onclick="Logic.prevImage()">&#8249;</button>
+            <div class="image-wrapper">
+                <img id="active-lightbox-img" src="" alt="View">
+                <div class="img-meta">
+                    <h3 id="meta-title">Title</h3>
+                    <p id="meta-cat">Category</p>
+                </div>
+            </div>
+            <button class="nav-arrow right" onclick="Logic.nextImage()">&#8250;</button>
+        </div>
+    </div>
+
+    <script src="1st .java"></script>
+</body>
+</html>
