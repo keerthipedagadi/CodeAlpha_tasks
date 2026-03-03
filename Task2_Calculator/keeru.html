@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CALC-7 ULTRA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="keeru.css">
+</head>
+<body>
 
+  <div class="grid-bg"></div>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+
+  <div class="calculator">
+    <div class="calc-body">
+
+      <!-- Corner screws -->
+      <div class="screw tl"></div>
+      <div class="screw tr"></div>
+      <div class="screw bl"></div>
+      <div class="screw br"></div>
+
+      <!-- Header -->
+      <div class="header">
+        <div class="logo-wrap">
+          <div class="logo-icon">⌗</div>
+          <span class="logo">CALC-7</span>
+        </div>
+        <div class="header-right">
+          <div class="mode-indicator">ONLINE</div>
+          <div class="ver">v2.0 ULTRA</div>
+        </div>
+      </div>
+
+      <!-- Display -->
+      <div class="display-section">
+        <div class="display-outer">
+          <div class="display-inner">
+            <div class="expression" id="expression">&nbsp;</div>
+            <div class="display" id="display">0</div>
+          </div>
+        </div>
+        <div class="history-bar" id="historyBar"></div>
+      </div>
+
+      <!-- Button Grid -->
+      <div class="buttons">
+        <button class="action"       data-action="clear"     title="Clear [Esc]">AC</button>
+        <button class="backspace-btn" data-action="backspace" title="Backspace [⌫]">⌫</button>
+        <button class="percent"      data-action="percent"   title="Percent [%]">%</button>
+        <button class="op"           data-op="/"             title="Divide [/]">÷</button>
+
+        <button class="num" data-num="7">7</button>
+        <button class="num" data-num="8">8</button>
+        <button class="num" data-num="9">9</button>
+        <button class="op"  data-op="*" title="Multiply [*]">×</button>
+
+        <button class="num" data-num="4">4</button>
+        <button class="num" data-num="5">5</button>
+        <button class="num" data-num="6">6</button>
+        <button class="op"  data-op="-" title="Subtract [-]">−</button>
+
+        <button class="num" data-num="1">1</button>
+        <button class="num" data-num="2">2</button>
+        <button class="num" data-num="3">3</button>
+        <button class="op"  data-op="+" title="Add [+]">+</button>
+
+        <button class="sign-btn" data-action="sign"    title="+/−">±</button>
+        <button class="num"      data-num="0">0</button>
+        <button class="num"      data-action="decimal" title="Decimal [.]">.</button>
+        <button class="equals"   data-action="equals"  title="Equals [Enter]">=</button>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="keyboard-hint">KEYBOARD SUPPORTED</div>
+        <div class="powered">PWR <span>●●●</span></div>
+      </div>
+
+    </div><!-- /.calc-body -->
+
+    <div class="toast" id="toast"></div>
+  </div><!-- /.calculator -->
+
+  <script src="keeru.js"></script>
+</body>
+</html>
